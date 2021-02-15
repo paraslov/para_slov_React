@@ -1,3 +1,6 @@
+My site https://www.para-slov.ru remade with React.js
+You will see it online soon...
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
