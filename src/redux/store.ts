@@ -1,8 +1,10 @@
 import { combineReducers, createStore } from 'redux'
-import homePage_reducer from './reducers/homePage_reducer'
+import blogPageReducer from './reducers/blogPage_reducer'
+import homePageReducer from './reducers/homePage_reducer'
 
 let rootReducer = combineReducers({
-	homePage: homePage_reducer,
+	homePage: homePageReducer,
+	blogPage: blogPageReducer,
 })
 
 const store = createStore(rootReducer)

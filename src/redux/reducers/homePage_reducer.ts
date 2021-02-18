@@ -16,7 +16,7 @@ let initialState = {
 
 export type HomePageInitialStateType = typeof initialState;
 
-const homePage_reducer = (state = initialState, action: any): HomePageInitialStateType => {
+const homePageReducer = (state = initialState, action: any): HomePageInitialStateType => {
 	switch (action.type) {
 		default: 
 			return state
@@ -24,4 +24,4 @@ const homePage_reducer = (state = initialState, action: any): HomePageInitialSta
 }
 
 
-export default homePage_reducer
+export default homePageReducer
