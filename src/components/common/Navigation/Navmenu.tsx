@@ -14,7 +14,7 @@ const Navmenu = () => {
 					<NavLink to='/blog'>Блог</NavLink> 				
 				</div>
 				<div className={classes.navItem}>
-					<NavLink to='/references'>Ссылки</NavLink>					
+					<NavLink to='/references'>Материалы</NavLink>					
 				</div>
 				<div className={classes.navItem}>
 					<NavLink to='/stats'>Статистика</NavLink>					

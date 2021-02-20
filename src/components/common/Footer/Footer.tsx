@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
 	return (
 		<div>
 			<div className = {classes.footerText}>
-				© 2021 Para Slov
+				© 2021 Para Slov. Made with ReactJS
 			</div>
 		</div>
 )}
