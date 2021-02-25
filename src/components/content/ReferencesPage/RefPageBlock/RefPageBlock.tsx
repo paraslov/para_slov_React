@@ -1,7 +1,5 @@
 //import classes from '../ReferencesPage.module.css'
 
-import { RefPageBlockType } from "../../../../redux/initialState/referencesPageState"
-
 
 type PropsType = {
 	message: string

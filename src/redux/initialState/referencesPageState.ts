@@ -132,10 +132,10 @@ export const referencesPageInitialState = {
             </p>`,
 		id: 1},
 		{message:`<p>	И конечно великолепный курс CS-50 Гарвардского Университета! 
-				Рекомендую всем для просмотра! Основы Computer Science в очень увелкательной форме.
+				Рекомендую всем для просмотра! Основы Computer Science в очень увелкательной форме
             <a href="https://www.youtube.com/watch?v=Sy_wba7l1UU&list=PLawfWYMUziZqyUL5QDLVbe3j5BKWj42E5"
                 title="Интро курса CS-50" target="_blank"><span>"CS-50"</span>
-			</a>
+			</a>.
             </p>`,
 		id: 2},
 		{message:`<p>	<strong>"Чистый Код"</strong> - Роберт Мартин, 

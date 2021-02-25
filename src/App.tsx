@@ -3,7 +3,7 @@ import { Route, BrowserRouter, Switch, Redirect} from 'react-router-dom';
 import { Provider } from 'react-redux'
 import './App.css';
 import Header from './components/common/Header/Header';
-import Navmenu from './components/common/Navigation/Navmenu';
+import NavMenuContainer from './components/common/Navigation/Navmenu';
 import Footer from './components/common/Footer/Footer';
 import store from './redux/store'
 import HomePageContainer from './components/content/HomePage/HomePage';
@@ -17,7 +17,7 @@ const App = () => {
   return (
     <div className="app-wrapper">
       <Header />
-      <Navmenu />
+      <NavMenuContainer />
       <Switch>
         <Route exact path='/' render={() => <Redirect to='/home'/>} />
         <Route path='/home' render={() => <HomePageContainer/>} />

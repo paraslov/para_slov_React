@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import { RefPageBlockType } from '../../../redux/initialState/referencesPageState'
-import { getRefPageDescText, getRefPageUpdateDate } from '../../../redux/selectors/refPage_selectors'
+import { getCommonRefs, getHtmlCssRefs, getJavaScriptRefs, getJobSearchRefs, getReactRefs, getRefPageDescText, getRefPageItKamasutraRef, getRefPageUpdateDate } from '../../../redux/selectors/refPage_selectors'
 import { AppStateType } from '../../../redux/store'
 import classes from './ReferencesPage.module.css'
 import RefPageBlock from './RefPageBlock/RefPageBlock'
@@ -96,12 +96,12 @@ const mapStateToProps = (state: AppStateType) => {
 	return {
 		refPageDescText: getRefPageDescText(state),
 		refPageUpdateDate: getRefPageUpdateDate(state),
-		refPageItKamasutraRef: state.refPage.refPageItKamasutraRef,
-		htmlCssRefs: state.refPage.htmlCssRefs,
-		javaScriptRefs: state.refPage.javaScriptRefs,
-		reactRefs: state.refPage.reactRefs,
-		commonRefs: state.refPage.commonRefs,
-		jobSearchRefs: state.refPage.jobSearchRefs,
+		refPageItKamasutraRef: getRefPageItKamasutraRef(state),
+		htmlCssRefs: getHtmlCssRefs(state),
+		javaScriptRefs: getJavaScriptRefs(state),
+		reactRefs: getReactRefs(state),
+		commonRefs: getCommonRefs(state),
+		jobSearchRefs: getJobSearchRefs(state),
 	}
 }
 type MapStatePropsType = {

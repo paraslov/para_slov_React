@@ -1,9 +1,20 @@
-
+import classes from './Friends.module.css'
 
 
 const FriendsPage: React.FC = () => {
 	return(
-		<div>My friends here Valera lol</div>
+		<div className={classes.contentWrapper}>
+			<header className={classes.friendsPageHeader}>
+				<h2>Здесь будут ссылки на аккаунты наших друзей - единомышленников</h2>
+			</header>
+			<div>
+				Валерий, админ нашего телеграм - чата <strong>t.me/para_slovtg</strong>. Он тоже только начал обучение
+				фронтенд разработке и с удовольствием делится в нашем чате найденными ресурсами для обучения.
+				Его инстаграм:
+            <a href="https://www.instagram.com/travelstory4you/" title="Перейти в инстаграм Валерия"
+					target="_blank"><span> @travelstory4you</span></a>
+			</div> 
+		</div>
 	)
 }
 
