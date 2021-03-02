@@ -1,8 +1,4 @@
-.contentWrapper {
-	margin-left: 15%;
-	margin-right: 15%;
-	
-}
+
 
 h2 {
 	margin-bottom: 3px;
@@ -14,3 +10,27 @@ h2 {
 	margin-bottom: 15px;
 	text-align: justify;
 }
+
+
+@media (max-width: 767px) and (orientation: portrait) {
+	iframe {
+		width: 360px;
+		height: 202px;
+	}
+}
+
+
+@media (max-width: 413px) and (orientation: portrait) {
+	iframe {
+		width: 280px;
+		height: 157px;
+	}
+}
+
+@media (max-width: 600px) and (orientation: landscape) {
+	iframe {
+		width: 460px;
+		height: 258px;
+	}
+}
+

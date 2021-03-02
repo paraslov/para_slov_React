@@ -1,6 +1,4 @@
-.contentWrapper {
-	margin-left: 15%;
-	margin-right: 15%;
+.statsWrapper {
 	font-size: 1.1em;
 }
 
@@ -8,5 +6,6 @@ td {
 	font-weight: 600;
 	border-bottom: 1px dotted #333;
 	padding-right: 20px;
+	padding-bottom: 5px;
 }
 

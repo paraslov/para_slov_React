@@ -2,7 +2,7 @@ import { connect } from 'react-redux'
 import { BlogPostType } from '../../../redux/initialState/blogPageState'
 import { getBlogPosts } from '../../../redux/selectors/blogPost_selectors'
 import { AppStateType } from '../../../redux/store'
-import classes from './BlogPage.module.css'
+import styles from '../../common/Style/style.module.css'
 import BlogPagePost from './BlogPagePost/BlogPagePost'
 
 type PropsType = {
@@ -17,7 +17,7 @@ const BlogPage: React.FC<PropsType> = (props) => {
 	)
 
 	return (
-		<div className={classes.contentWrapper}>
+		<div className={styles.contentWrapper}>
 			{blogPageContent}
 		</div>
 	)

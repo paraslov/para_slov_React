@@ -1,17 +1,13 @@
-.contentWrapper {
-	margin-left: 15%;
-	margin-right: 15%;
-	font-size: 1.1em;
-}
 
-.contentWrapper a {
+
+.referencesWrapper a {
 	text-decoration: none;
 	color: #333;
 	font-weight: 600;
 	border-bottom: 1px solid #333;
 }
 
-.contentWrapper a:hover {
+.referencesWrapper a:hover {
 	color: red;
 	border-bottom: 1px solid red;
 }

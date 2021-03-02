@@ -1,3 +1,4 @@
+import { useState } from "react"
 import { connect } from "react-redux"
 import { NavLink } from "react-router-dom"
 import { CurrentPageNameType, navMenuActions } from "../../../redux/reducers/navMenu_reducer"
@@ -9,35 +10,58 @@ import classes from "./Navmenu.module.css"
 type PropsType = MapStatePropsType & MapDispatchPropsType
 
 const NavMenu: React.FC<PropsType> = (props) => {
+
+	let [burgerMenuActive, toggleMenuIcon] = useState<boolean>(false)
+
 	return (
-		<div className={classes.navmenuWrapper}>			
-			<div className={classes.navMenu}>
+		<div className={`${classes.navmenuWrapper} ${burgerMenuActive ? classes.open : ''}`}>	
+			<div className={`${classes.burgerMenu} ${burgerMenuActive ? classes.burgerMenuActive : ''}`}
+				onClick={() => toggleMenuIcon(!burgerMenuActive)}>
+				<span></span>
+			</div>		
+			<div className={`${classes.navMenu} ${burgerMenuActive ? classes.open : ''}`}>
 				{/* <NavLink to='/profile' activeClassName={classes.active}>Profile</NavLink> */}
 				<div className={classes.navItem}>
-					<NavLink onClick={() => props.setCurrentPageName('Главная')} 
+					<NavLink onClick={() => {
+						props.setCurrentPageName('Главная')
+						toggleMenuIcon(false)
+					}} 
 						to='/home'>Главная</NavLink>				
 				</div>
 				<div className={classes.navItem}>
-					<NavLink onClick={() => props.setCurrentPageName('Блог')} 
+					<NavLink onClick={() => {
+						props.setCurrentPageName('Блог')
+						toggleMenuIcon(false)
+					}} 
 						to='/blog'>Блог</NavLink> 				
 				</div>
 				<div className={classes.navItem}>
-					<NavLink onClick={() => props.setCurrentPageName('Материалы')} 
+					<NavLink onClick={() => {
+						props.setCurrentPageName('Материалы')
+						toggleMenuIcon(false)
+					}} 
 						to='/references'>Материалы</NavLink>					
 				</div>
 				<div className={classes.navItem}>
-					<NavLink onClick={() => props.setCurrentPageName('Статистика')} 
+					<NavLink onClick={() => {
+						props.setCurrentPageName('Статистика')
+						toggleMenuIcon(false)
+					}} 
 						to='/stats'>Статистика</NavLink>					
 				</div>
 				<div className={classes.navItem}>
-					<NavLink onClick={() => props.setCurrentPageName('Наши друзья')} 
+					<NavLink onClick={() => {
+						props.setCurrentPageName('Наши друзья')
+						toggleMenuIcon(false)
+					}} 
 						to='/friends'>Наши друзья</NavLink>					
 				</div>				
-				<div className={classes.navItem}>
+				{/* <div className={classes.navItem}>
 					<NavLink onClick={() => props.setCurrentPageName('Мои навыки')} 
 						to='/aboutme'>Мои навыки</NavLink>					
-				</div>				
+				</div>				 */}
 			</div>
+
 			<div className={classes.pageName}>{props.currentPageName}</div>
 			<div className={classes.bottomBar}></div>
 		</div>

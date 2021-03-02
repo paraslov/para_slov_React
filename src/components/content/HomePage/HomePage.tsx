@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { HomePageTextType } from '../../../redux/reducers/homePage_reducer'
 import { getHomePageText } from '../../../redux/selectors/homePage_selector'
 import { AppStateType } from '../../../redux/store'
+import styles from '../../common/Style/style.module.css'
 import classes from './HomePage.module.css'
 import HomePageTextBlock from './HomePageTextBlock/HomePageTextBlock'
 
@@ -17,7 +18,7 @@ const HomePage: React.FC<HomePagePropsType> = (props) => {
 	)
 	
 	return (
-		<div className={classes.contentWrapper}>
+		<div className={styles.contentWrapper}>
 			<div className = {classes.header}>
 				Моё обучение программированию. Путь с нуля
 			</div>

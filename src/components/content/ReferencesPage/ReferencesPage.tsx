@@ -2,6 +2,7 @@ import { connect } from 'react-redux'
 import { RefPageBlockType } from '../../../redux/initialState/referencesPageState'
 import { getCommonRefs, getHtmlCssRefs, getJavaScriptRefs, getJobSearchRefs, getReactRefs, getRefPageDescText, getRefPageItKamasutraRef, getRefPageUpdateDate } from '../../../redux/selectors/refPage_selectors'
 import { AppStateType } from '../../../redux/store'
+import styles from '../../common/Style/style.module.css'
 import classes from './ReferencesPage.module.css'
 import RefPageBlock from './RefPageBlock/RefPageBlock'
 
@@ -21,7 +22,7 @@ const ReferencesPage: React.FC<MapStatePropsType> = (props) => {
 	let jobSearchRefs = mapRefsBlocks(props.jobSearchRefs)
 
 	return (
-		<div className={classes.contentWrapper}>
+		<div className={`${styles.contentWrapper} ${classes.referencesWrapper}`}>
 			<header>
 				<h2>Ссылки на материалы для обучения</h2>
 				<p>{props.refPageDescText}</p>

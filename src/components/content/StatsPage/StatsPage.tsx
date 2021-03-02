@@ -1,11 +1,12 @@
+import styles from '../../common/Style/style.module.css'
 import classes from './StatsPage.module.css'
 
 const StatsPage: React.FC = () => {
 	return (
-		<div className={classes.contentWrapper}>
+		<div className={`${styles.contentWrapper} ${classes.statsWrapper}`}>
 			<header>
 				<h2>Время, использованное на обучение:</h2>
-				<p>Дата старта обучения: 23.08.2020 г</p>
+				<p>Старт обучения: 23.08.2020 г</p>
 				<p>Обновлено: 30.01.2021 г</p>
 			</header>
 			<section>

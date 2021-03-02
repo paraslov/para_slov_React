@@ -1,0 +1,20 @@
+
+/* wrapper for all content pages (Home, Blog, Stats, etc.) */
+.contentWrapper {
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+/* mobile media query for portreit orientation*/
+@media (max-width: 767px) and (orientation: portrait) {
+	.contentWrapper {
+		margin: 0 7%;
+	}
+}
+
+/* mobile media query for portreit landscape*/
+@media (max-width: 767px) and (orientation: landscape) {
+	.contentWrapper {
+		margin: 0 10%;
+	}
+}

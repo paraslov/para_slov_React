@@ -1,6 +1,4 @@
-.contentWrapper {
-	margin-left: 15%;
-	margin-right: 15%;
+.friendItem {
 	font-size: 1.1em;
 }
 
@@ -8,14 +6,14 @@
 	margin-bottom: 20px;
 }
 
-.contentWrapper a {
+.friendItem a {
 	text-decoration: none;
 	color: #333;
 	font-weight: 600;
 	border-bottom: 1px solid #333;
 }
 
-.contentWrapper a:hover {
+.friendItem a:hover {
 	color: red;
 	border-bottom: 1px solid red;
 }
