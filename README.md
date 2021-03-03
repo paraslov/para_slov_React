@@ -1,5 +1,13 @@
-My site https://www.para-slov.ru remade with React.js
-You will see it online soon...
+My site https://www.para-slov.ru remade with React.js.
+My first fully self made project on React.js and TypeScript.
+
+Yes, I had to use state as kind of DB, cuz I don't have expirience in backend yet.
+
+I had a problems as I refreshing page on my hosting, so I had to use 
+HashRouter instead of BrowserRouter. Temporary solution, till I learn Webpack.
+
+I have a problem with page name when trying to go step back in browser. Currently
+working on it...
 
 # Getting Started with Create React App
 
