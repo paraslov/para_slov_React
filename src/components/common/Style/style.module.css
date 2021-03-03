@@ -5,6 +5,18 @@
 	margin-right: 15%;
 }
 
+.contentWrapper a {
+	text-decoration: none;
+	color: #333;
+	font-weight: 600;
+	border-bottom: 1px solid #333;
+}
+
+.contentWrapper a:hover {
+	color: red;
+	border-bottom: 1px solid red;
+}
+
 /* mobile media query for portreit orientation*/
 @media (max-width: 767px) and (orientation: portrait) {
 	.contentWrapper {

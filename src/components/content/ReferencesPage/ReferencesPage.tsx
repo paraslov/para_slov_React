@@ -22,7 +22,7 @@ const ReferencesPage: React.FC<MapStatePropsType> = (props) => {
 	let jobSearchRefs = mapRefsBlocks(props.jobSearchRefs)
 
 	return (
-		<div className={`${styles.contentWrapper} ${classes.referencesWrapper}`}>
+		<div className={`${styles.contentWrapper}`}>
 			<header>
 				<h2>Ссылки на материалы для обучения</h2>
 				<p>{props.refPageDescText}</p>

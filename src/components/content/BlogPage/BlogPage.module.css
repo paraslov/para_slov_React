@@ -1,5 +1,4 @@
 
-
 h2 {
 	margin-bottom: 3px;
 }
@@ -21,6 +20,13 @@ h2 {
 
 
 @media (max-width: 413px) and (orientation: portrait) {
+	iframe {
+		width: 330px;
+		height: 185px;
+	}
+}
+
+@media (max-width: 374px) and (orientation: portrait) {
 	iframe {
 		width: 280px;
 		height: 157px;

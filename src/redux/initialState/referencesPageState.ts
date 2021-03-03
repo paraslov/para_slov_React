@@ -1,4 +1,5 @@
-
+//! this is something like a DB for my refs Page as a temporary desition of DB problem
+//! as I haven't learn backend even a bit yet and was focused on frontend
 
 export type RefPageBlockType = {
 	message: string
@@ -9,7 +10,7 @@ export const referencesPageInitialState = {
 	refPageDescText: `Тут будут хранится ссылки на все обучающие материалы, которыми пользовался я сам, 
 		а так же на материалы, которыми пользовались для обучения другие ребята и щедро поделились 
 		своими источниками. Спасибо им!`,
-	refPageUpdateDate: '16 октября 2020г.',
+	refPageUpdateDate: '30 янвря 2021г.',
 	refPageItKamasutraRef: `<p>
 			Во-первых, хочу поделиться видео с <strong>канала IT-KAMASUTRA</strong> 
 		<a href="https://www.youtube.com/watch?v=S7xq9x8i47k" 

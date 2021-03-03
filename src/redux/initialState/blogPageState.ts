@@ -1,3 +1,6 @@
+//! this is something like a DB for my blog Page as a temporary desition of DB problem
+//! as I haven't learn backend even a bit yet and was focused on frontend 
+
 export type BlogPostType = {
 	postId: number
 	postTitle: string
@@ -9,7 +12,42 @@ export type BlogPostType = {
 export const blogPageInitialState = {
 	blogPosts: [
 		{
-			postId: 1,
+			postId: 7,
+			postTitle: 'Сайт теперь полностью на ReactJS!',
+			postDate: '02 марта 2021 года',
+			postTextInnerHTML: `<p>Закончил своё первое, полностью самостоятельное SPA на 
+					ReactJS и символично, что это стал мой сайт <strong>paraslov.ru</strong>,
+					как и когда почти полгода назад первое, что я написал после изучения
+					начальных знаний html&css был сайт Пара Слов. 
+				</p>
+				<p>
+					Я получил огромное удовольствие от написания этого, пусть и простого сайта, на
+					react'e. Всё таки когда делаешь проект самостоятельно с нуля - это совсем другой
+					опыт, который не сравнится ни с каким опытом из учебного проекта.
+				</p>
+				<p>
+					Конечно, много где пришлось выкручиваться и искать альтернативы, например, 
+					использовать redux-store в качестве мини базы данных и применить
+					HashRouter вместо BrowserRouter, но, как говорится, всегда есть над чем 
+					работать и что изучать дальше. Пока захотелось сфокусироваться только на 
+					фронтенде и не распылятся на изучение серверной части.
+				</p>
+				<p>
+					В планах продемонстрировать на сайте работу с API и DAL.
+					Я освоил эти навыки в проекте соц сети, но хотелось бы показать это и в 
+					личном проекте.
+					Возможно возьму API'шку с какого нибудь сайта погоды и отдельной страничкой
+					сделаю небольшой прогноз погоды. 
+				</p>
+				<p>
+					Ну а код сайта можете посмотреть на моём github - 
+					проект <a href="https://github.com/paraslov/para_slov_React"
+						target="_blank">para_slov_React</a>.
+				</p>`,
+			postVideoInnerHTML: ''
+		},
+		{
+			postId: 6,
 			postTitle: 'Стартовал поиск работы!',
 			postDate: '30 января 2021 года',
 			postTextInnerHTML: `Продолжаю интенсивное обучение и уже начал искать работу! Своими впечатлениями 
@@ -18,7 +56,7 @@ export const blogPageInitialState = {
 			postVideoInnerHTML: '<iframe width="560" height="315" src="https://www.youtube.com/embed/dZ3urGvSaAE" frameBorder="0"	allow="accelerometer; autoplay; clipboard-write; encrypted- media; gyroscope; picture-in -picture"	allowFullScreen></iframe>'
 		},
 		{
-			postId: 2,
+			postId: 5,
 			postTitle: 'Месяц изучения React.js!',
 			postDate: '10 декабря 2020г.',
 			postTextInnerHTML: `Это был супер крутой месяц, который доставил мне массу удовольствия во время 
@@ -27,7 +65,7 @@ export const blogPageInitialState = {
 			postVideoInnerHTML: '<iframe width="560" height="315" src="https://www.youtube.com/embed/FH7bn1xyrzE" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>'
 		},
 		{
-			postId: 3,
+			postId: 4,
 			postTitle: 'Начал изучение React.js!',
 			postDate: '17 ноября 2020г.',
 			postTextInnerHTML: `<p>Вчера я наконец то начал изучение библиотеки react.js к которому я шёл первые 2.5 месяца 
@@ -41,7 +79,7 @@ export const blogPageInitialState = {
 			postVideoInnerHTML: ''
 		},
 		{
-			postId: 4,
+			postId: 3,
 			postTitle: 'Организовал блоки ссылками на html странички',
 			postDate: '16 октября 2020г.',
 			postTextInnerHTML: `<p>
@@ -65,7 +103,7 @@ export const blogPageInitialState = {
 			postVideoInnerHTML: ''
 		},
 		{
-			postId: 5,
+			postId: 2,
 			postTitle: 'Первая запись в блоге на собственном сайте, после 20 дней обучения html&css',
 			postDate: '13 сентября 2020г.',
 			postTextInnerHTML: `<p>Ну вот и пришло время тестировать свой собственный сайт и сделать первую запись в блоге. Пока что я
@@ -76,7 +114,7 @@ export const blogPageInitialState = {
 			postVideoInnerHTML: ''
 		},
 		{
-			postId: 6,
+			postId: 1,
 			postTitle: 'Первый выпуск "Дневника программиста" на моём YouTube-канале',
 			postDate: '',
 			postTextInnerHTML: `<p>Я рассказал о самом начале своего пути - что я делал с того момента как принял решение изучать
